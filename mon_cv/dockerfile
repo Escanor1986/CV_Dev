@@ -1,0 +1,21 @@
+# Utiliser une image de base Node.js officielle
+FROM node:16-alpine
+
+# Définir le répertoire de travail dans le conteneur
+WORKDIR /app
+
+# Copier les fichiers de package et installez les dépendances
+COPY package*.json ./
+RUN npm install
+
+# Copier le reste des fichiers du projet
+COPY . .
+
+# Construire l'application
+RUN npm run build
+
+# Port sur lequel l'application s'exécute
+EXPOSE 3000
+
+# Commande pour exécuter l'application
+CMD ["npm"]
