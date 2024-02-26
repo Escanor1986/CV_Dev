@@ -85,18 +85,3 @@ body {
 .slide-in-left {
   animation: slideInLeft 2s cubic-bezier(0.23, 1, 0.32, 1);
 }
-
-@keyframes rollInRight {
-  from {
-    opacity: 0;
-    transform: translateX(100%) rotate(120deg);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0) rotate(0deg);
-  }
-}
-
-.roll-in-right {
-  animation: rollInRight 2s cubic-bezier(0.23, 1, 0.32, 1);
-}
