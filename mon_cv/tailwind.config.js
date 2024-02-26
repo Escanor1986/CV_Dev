@@ -7,7 +7,7 @@ export default {
         'synth-pink': '#ff007a',
         'synth-blue': '#00d9e9',
         'synth-purple': '#bd00ff',
-        'nature-green': '#3f704d',
+        'nature-green': '#4ade80',
       },
     },
   },
