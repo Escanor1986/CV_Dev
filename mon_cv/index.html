@@ -3,59 +3,575 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Votre Nom - CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
+
+    <title>Lionel ZOVI - CV</title>
+
     <link href="dist/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-900 text-white font-sans">
-    <div class="container mx-auto p-4">
-      <header class="text-center my-12">
-        <h1 class="text-5xl font-bold">Votre Nom</h1>
-        <p class="text-xl mt-4">Développeur Fullstack / Software</p>
-      </header>
+  <body class="bg-gray-900 text-white">
+
+    <header class="text-center py-12">
+        <h1 class="text-5xl font-bold text-synth-pink shadow-lg shadow-pink-500/50">Lionel ZOVI</h1>
+        <p class="text-xl text-synth-blue mt-4">Développeur Fullstack / Software</p>
+    </header>
 
       <section class="my-12">
-        <h2 class="text-4xl font-bold border-b-2 border-gray-700 pb-2">
-          À propos de moi
-        </h2>
-        <p class="mt-4">Votre résumé professionnel ici...</p>
+        <h2 class="text-4xl font-bold text-synth-blue border-b-2 border-purple-500 pb-2">À propos de moi</h2>
+        <p class="mt-4 text-nature-green text-xl">
+          Développeur Fullstack / Software avec trois ans d'expérience,
+          spécialisé en JavaScript, TypeScript, Python, CSS et HTML. Compétent
+          dans l'utilisation de frameworks tels que React, Express, Django et
+          Tailwind, ainsi que dans les outils modernes de développement comme
+          Docker, Webpack, Vite et Vitest. Expérience en CI/CD, gestion de bases
+          de données NoSQL et SQL, et versionning avec GIT. Aptitudes éprouvées
+          en gestion d'équipe et en résolution de problèmes grâce à 15 ans
+          d'expérience dans un poste à responsabilité. Enthousiaste et
+          communicatif, je maîtrise le Français, l'Anglais, le Néerlandais et
+          l'Italien.
+        </p>
       </section>
 
       <section class="my-12">
-        <h2 class="text-4xl font-bold border-b-2 border-gray-700 pb-2">
-          Expérience professionnelle
-        </h2>
-        <!-- Détails de vos expériences ici -->
+        <h2 class="text-4xl font-bold text-synth-blue border-b-2 border-purple-500 pb-2">Projets</h2>
+
+
+        <div class="mt-8">
+          <div class="mb-5">
+            <h3 class="text-2xl font-semibold">Mon CV en ligne</h3>
+            <a
+              href="https://github.com/Escanor1986/CV_Dev"
+              class="text-synth-blue hover:text-blue-700"
+              >Voir le projet sur GitHub</a
+            >
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Technologies:</span> HTML, CSS, JavaScript,
+            TypeScript, TailwindCSS, Vite, Docker, ESLint, Prettier
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Description:</span> Développement de mon CV
+            en ligne pour présenter mon expérience professionnelle, mes
+            compétences et mes projets personnels. Conçu pour être interactif,
+            réactif et accessible sur tous les appareils.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Fonctionnalités:</span> Animations CSS pour
+            une expérience utilisateur enrichie, formulaire de contact
+            dynamique, navigation fluide entre les sections, affichage
+            responsive adapté à tous les types d'écrans.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Développement:</span> Utilisation de
+            TypeScript pour un code plus sûr et maintenable, et de TailwindCSS
+            pour un design moderne et personnalisé. Configuration de Docker pour
+            une mise en production simplifiée et d'un workflow CI/CD pour
+            l'intégration et le déploiement automatiques.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Validation et tests:</span> Mise en œuvre de
+            tests unitaires et d'intégration pour garantir la fiabilité de
+            l'application, utilisation de ESLint et Prettier pour assurer la
+            cohérence du code.
+          </div>
+        </div>
+
+
+        <div class="mt-8">
+          <div class="mb-5">
+            <h3 class="text-2xl font-semibold">Site E-Commerce</h3>
+            <a
+              href="https://escanor1986.github.io/Page_produit_site_e_commerce/"
+              class="text-synth-blue hover:text-blue-700"
+              >Voir le projet sur GitHub Pages</a
+            >
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Technologies:</span> React, React Router,
+            TypeScript, TailwindCSS, Vite, Docker, Node.js, Express, ESLint,
+            Prettier, Vitest
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Description:</span> Développement d'un site
+            e-commerce complet avec une interface utilisateur moderne et
+            réactive. Le projet met en œuvre des pratiques de développement
+            avancées, y compris le typage fort, les tests, la conteneurisation
+            et l'intégration CI/CD.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Fonctionnalités:</span> Interface
+            utilisateur conçue avec React et TailwindCSS, typage fort avec
+            TypeScript, intégration de tests unitaires avec Vitest, déploiement
+            via Docker, et flux de travail CI/CD pour une intégration et un
+            déploiement automatiques.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Back-End:</span> API REST personnalisée
+            construite avec Node.js et Express pour servir les données
+            nécessaires côté client.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Prérequis et Installation:</span> Nécessite
+            Node.js, npm, et Docker. Les instructions pour cloner le dépôt,
+            installer les dépendances et démarrer les serveurs de développement
+            sont fournies.
+          </div>
+        </div>
+
+
+        <div class="mt-8">
+          <div class="mb-5">
+            <h3 class="text-2xl font-semibold">Calculatrice TypeScript</h3>
+            <a
+              href="https://escanor1986.github.io/Calculatrice-en-TypeScript-avec-Tailwind/"
+              class="text-synth-blue hover:text-blue-700"
+              >Voir le projet sur GitHub Pages</a
+            >
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Technologies:</span> TypeScript,
+            TailwindCSS, Webpack, Vitest, ESLint, Prettier, Pipelines CI/CD
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Description:</span> Développement d'une
+            application de calculatrice offrant des fonctionnalités de calcul de
+            base (addition, soustraction, multiplication, division) avec une
+            interface utilisateur conviviale construite avec TailwindCSS.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Caractéristiques:</span> Opérations de base
+            (addition, soustraction, multiplication, division), typage fort avec
+            TypeScript, tests unitaires avec Vitest, linting avec ESLint et
+            formatage avec Prettier, bundling avec Webpack, déploié sur GitHub
+            Pages workflow (CI/CD).
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Installation et Utilisation:</span> Le
+            projet peut être cloné et exécuté localement en installant les
+            dépendances via npm, démarrage du serveur de développement,
+            construction de la version de production, exécution des tests, et
+            lancement de ESLint pour maintenir la qualité du code.
+          </div>
+        </div>
+
+
+        <div class="mt-8">
+          <div class="mb-5">
+            <h3 class="text-2xl font-semibold">
+              Bunny Jump - Jeu en TypeScript avec Phaser 3
+            </h3>
+            <a
+              href="https://github.com/Escanor1986/My_Game"
+              class="text-synth-blue hover:text-blue-700"
+              >Voir le projet sur GitHub</a
+            >
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Technologies:</span> TypeScript, Phaser 3,
+            Vite, ESLint, Vitest, TailwindCSS
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Description:</span> Développement d'un jeu
+            de plateforme 'Bunny Jump' en utilisant TypeScript pour un code
+            structuré et Phaser 3 pour le moteur de jeu. Le projet est orienté
+            objet et vise à démontrer les compétences en programmation de jeux.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Fonctionnalités:</span> Gestion des sauts,
+            de la physique des personnages, collecte d'objets, système de score,
+            et animations. Conception de niveaux et intégration de mécaniques de
+            jeu interactives.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Outils de développement:</span>
+            Configuration de Vite pour le développement rapide, utilisation de
+            ESLint et Vitest pour assurer la qualité du code et des tests,
+            stylisation avec TailwindCSS pour les éléments d'interface
+            utilisateur.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Apprentissage:</span> Renforcement des
+            compétences en développement de jeux avec Phaser 3 et application
+            des principes de la programmation orientée objet en TypeScript.
+          </div>
+        </div>
+
+
+        <div class="mt-8">
+          <div class="mb-5">
+            <h3 class="text-2xl font-semibold">Agence Hapinesu Homu</h3>
+            <a
+              href="https://escanor1986.github.io/Agence_Hapinesu_Homu/"
+              class="text-synth-blue hover:text-blue-700"
+              >Voir le projet sur GitHub Pages</a
+            >
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Technologies:</span> HTML, CSS, JavaScript
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Description:</span> Création d'un site web
+            pour l'Agence Hapinesu Homu, conçu pour présenter les services et
+            les offres de l'agence. Le site est développé avec des standards web
+            modernes pour une expérience utilisateur fluide et interactive.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Fonctionnalités:</span> Conception
+            responsive pour une navigation optimale sur tous les appareils,
+            animations CSS pour améliorer l'engagement visuel, et intégration
+            JavaScript pour des interactions dynamiques avec les utilisateurs.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Points forts:</span> Utilisation de
+            techniques de layout modernes telles que Flexbox et Grid pour une
+            mise en page efficace, et application des meilleures pratiques de
+            SEO pour améliorer la visibilité du site.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Déploiement:</span> Le site est déployé sur
+            GitHub Pages, démontrant la capacité à gérer des déploiements
+            efficaces et à utiliser des services d'hébergement basés sur le
+            cloud.
+          </div>
+        </div>
+
+
+        <div class="mt-8">
+          <div class="mb-5">
+            <h3 class="text-2xl font-semibold">
+              Game On - Landing Page pour inscription à un tournoi de jeu vidéo
+            </h3>
+            <a
+              href="https://escanor1986.github.io/GameOn-website-FR/"
+              class="text-synth-blue hover:text-blue-700"
+              >Voir le projet sur GitHub Pages</a
+            >
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Technologies:</span> HTML, CSS, JavaScript,
+            Node.js, Express, Nodemailer
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Rôle:</span> Développeur Web
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Description:</span> Développement d'une
+            landing page pour l'inscription en ligne à un tournoi de jeu vidéo.
+            Intégration d'un formulaire d'inscription avec validation côté
+            client et serveur.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Fonctionnalités:</span> Mise en œuvre de la
+            validation du formulaire avec feedback visuel pour l'utilisateur.
+            Configuration de Nodemailer pour envoyer un e-mail de confirmation
+            automatique à l'utilisateur après l'inscription.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Back-End:</span> Mise en place d'un serveur
+            Node.js avec Express pour gérer les inscriptions et l'intégration
+            avec la fonctionnalité de messagerie.
+          </div>
+        </div>
+
+
+        <div class="mt-8">
+          <div class="mb-5">
+            <h3 class="text-2xl font-semibold">
+              Kasa - Site de location de type Airbnb
+            </h3>
+            <a
+              href="https://github.com/Escanor1986/P7_Kasa"
+              class="text-synth-blue hover:text-blue-700"
+              >Voir le projet sur GitHub</a
+            >
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Technologies:</span> React, Webpack,
+            JavaScript, Sass, Node.js, Express, MongoDB
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Rôle:</span> Développeur Full Stack
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Description:</span> Développement d'un site
+            simulant une plateforme de location de type Airbnb. Responsable de
+            la création des fonctionnalités de listing, like, suppression et
+            modification de biens à louer.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Fonctionnalités:</span> Mise en place d'une
+            interface utilisateur interactive avec React. Gestion des états de
+            l'application avec des techniques avancées de JavaScript et React.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Back-End:</span> Configuration d'un serveur
+            Node.js avec Express et connexion à une base de données MongoDB pour
+            la gestion des informations de location.
+          </div>
+        </div>
+
+
+        <div class="mt-8">
+          <div class="mb-5">
+            <h3 class="text-2xl font-semibold">
+              Piicante - Plateforme de gestion de sauces piquantes
+            </h3>
+            <a
+              href="https://github.com/Escanor1986/P6_Piicante"
+              class="text-synth-blue hover:text-blue-700"
+              >Voir le projet sur GitHub</a
+            >
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Technologies:</span> Angular, Node.js,
+            Express, MongoDB, JSON Web Token, Bcrypt, Helmet, Sanitize-html
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Rôle:</span> Développeur Full Stack
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Sécurité API:</span> Création et
+            sécurisation de l'API REST selon les standards OWASP, mise en œuvre
+            d'un système d'authentification avec JSON Web Token, hashage des
+            mots de passe avec Bcrypt.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Base de données:</span> Connexion à MongoDB
+            avec gestion sécurisée des variables d'environnement; utilisation
+            d'outils tels que MongoDB Compass et Atlas.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Fonctionnalités:</span> Implémentation des
+            fonctionnalités de création, modification, like et suppression de
+            sauces, directement liées à la base de données MongoDB depuis l'API
+            REST.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Sécurité et Performance:</span> Application
+            des mesures de sécurité telles que Helmet et Sanitize-html pour
+            équilibrer sécurité et performance.
+          </div>
+        </div>
+
+
+        <div class="mt-8">
+          <div class="mb-5">
+            <h3 class="text-2xl font-semibold">
+              Kanap - site e-commerce en ligne de vente de canapé
+            </h3>
+            <a
+              href="https://github.com/Escanor1986/P5_Kanap"
+              class="text-synth-blue hover:text-blue-700"
+              >Voir le projet sur GitHub</a
+            >
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Technologies:</span> HTML, CSS, JavaScript,
+            Node.js, Express
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Rôle:</span> Développeur principal
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Fonctionnalités principales:</span>
+            Utilisation de l'asynchrone, manipulation du DOM, gestion des
+            paramètres d'URL, formulaires, localStorage, fetch pour les requêtes
+            API.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">API:</span> Branchement à une API REST pour
+            la gestion des ressources produit.
+          </div>
+          <div class="mb-3">
+            <span class="font-bold">Fonctionnalités e-commerce:</span> Gestion
+            d'un panier et possibilité de passer des commandes en ligne
+            (simulation, sans processus de paiement).
+          </div>
+        </div>
       </section>
 
       <section class="my-12">
-        <h2 class="text-4xl font-bold border-b-2 border-gray-700 pb-2">
-          Formation
-        </h2>
-        <!-- Détails de votre formation ici -->
+        <h2 class="text-4xl font-bold text-synth-blue border-b-2 border-purple-500 pb-2">Formation</h2>
+       
+        <div class="mt-8">
+          <div class="mb-6">
+            <h3 class="text-2xl font-semibold">
+              Diplôme d'Humanité Supérieur en Sciences-Informatique
+            </h3>
+          </div>
+          <div class="mb-6">
+            <div class="mb-6">
+              <h3 class="text-2xl font-semibold">
+                Diplôme d'Inspecteur de Police
+              </h3>
+            </div>
+            <h3 class="text-2xl font-semibold">
+              Certificat en Criminologie (Bac+3)
+            </h3>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="text-2xl font-semibold">
+              Certificat de Développeur Web (JavaScript, React, Node.js,
+              MongoDB) (Bac+2)
+            </h3>
+          </div>
+          <div class="mb-6">
+            <h3 class="text-2xl font-semibold">Brevet JavaScript</h3>
+            <p>Dyma</p>
+          </div>
+          <div class="mb-6">
+            <h3 class="text-2xl font-semibold">Brevet JavaScript</h3>
+            <p>W3Schools</p>
+          </div>
+          <div class="mb-6">
+            <h3 class="text-2xl font-semibold">
+              Formation en cours de Fullstack Developer
+            </h3>
+            <p>NXAcademy</p>
+          </div>
+          <div class="mb-6">
+            <h3 class="text-2xl font-semibold">
+              Formation en cours de Software Développeur (Python, SQL,
+              Algorithme, Mathématique)
+            </h3>
+            <p>Code Academy</p>
+          </div>
+        </div>
       </section>
 
       <section class="my-12">
-        <h2 class="text-4xl font-bold border-b-2 border-gray-700 pb-2">
-          Compétences
-        </h2>
-        <!-- Liste de vos compétences ici -->
+        <h2 class="text-4xl font-bold text-synth-blue border-b-2 border-purple-500 pb-2">Compétences</h2>
+       
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="skill-set">
+            <h3 class="text-2xl font-semibold mb-2">
+              Développement Web Front-End
+            </h3>
+            <p>
+              Maîtrise avancée de HTML, CSS (incluant TailwindCSS), JavaScript
+              et TypeScript. Expérience avec des frameworks modernes comme React
+              et Angular pour créer des expériences utilisateur interactives et
+              réactives.
+            </p>
+          </div>
+          <div class="skill-set">
+            <h3 class="text-2xl font-semibold mb-2">Développement Back-End</h3>
+            <p>
+              Expertise en Node.js et Express pour la construction d'API REST
+              robustes. Expérience dans la gestion de bases de données avec
+              MongoDB et SQL pour une intégration de données fluide et
+              performante.
+            </p>
+          </div>
+          <div class="skill-set">
+            <h3 class="text-2xl font-semibold mb-2">
+              Programmation Orientée Objet & Jeu
+            </h3>
+            <p>
+              Connaissance approfondie de TypeScript en orienté objet.
+              Développement de jeux avec Phaser 3, démontrant une application
+              créative des principes de programmation.
+            </p>
+          </div>
+          <div class="skill-set">
+            <h3 class="text-2xl font-semibold mb-2">
+              Outils & Méthodologies de Développement
+            </h3>
+            <p>
+              Utilisation efficace de Docker pour la conteneurisation,
+              implémentation de flux de travail CI/CD pour l'automatisation des
+              tests et du déploiement. Pratique du linting avec ESLint et du
+              formatage avec Prettier pour maintenir un code de haute qualité.
+            </p>
+          </div>
+          <div class="skill-set">
+            <h3 class="text-2xl font-semibold mb-2">Test & Sécurité</h3>
+            <p>
+              Conception de tests unitaires et d'intégration avec Vitest.
+              Connaissance des standards OWASP pour la sécurité des applications
+              web.
+            </p>
+          </div>
+          <div class="skill-set">
+            <h3 class="text-2xl font-semibold mb-2">
+              Formation & Certification
+            </h3>
+            <p>
+              Formations complétées en développement web et logiciel,
+              enrichissant les compétences en programmation avec des
+              certifications en JavaScript et des cours complets en
+              développement Full Stack.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section class="my-12">
-        <h2 class="text-4xl font-bold border-b-2 border-gray-700 pb-2">
-          Projets
-        </h2>
-        <!-- Détails de vos projets ou portfolio ici -->
+        <h2 class="text-4xl font-bold text-synth-blue border-b-2 border-purple-500 pb-2">Contact</h2>
+        
+        <div class="mt-8">
+          <p class="mb-4">
+            Pour toute question, proposition de projet ou demande de
+            collaboration, n'hésitez pas à me contacter :
+          </p>
+          <ul>
+            <li>Email: [Votre Email]</li>
+            <li>Téléphone: [Votre Téléphone]</li>
+            <li>
+              LinkedIn:
+              <a
+                href="[Votre LinkedIn]"
+                class="text-synth-blue hover:text-blue-700"
+                >Votre LinkedIn</a
+              >
+            </li>
+            <li>
+              GitHub:
+              <a href="[Votre GitHub]" class="text-synth-blue hover:text-blue-700"
+                >Votre GitHub</a
+              >
+            </li>
+            <li>
+              Codewars:
+              <a
+                href="[Votre Codewars]"
+                class="text-synth-blue hover:text-blue-700"
+                >Votre Codewars</a
+              >
+            </li>
+            <li>
+              Coderbyte:
+              <a
+                href="[Votre Coderbyte]"
+                class="text-synth-blue hover:text-blue-700"
+                >Votre Coderbyte</a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="my-12">
-        <h2 class="text-4xl font-bold border-b-2 border-gray-700 pb-2">
-          Contact
-        </h2>
-        <!-- Vos informations de contact ici -->
+        <h2 class="text-4xl font-bold text-synth-blue border-b-2 border-purple-500 pb-2">Réalisations en Développement</h2>
+       
+        <div class="mt-8">
+          <div class="mb-6">
+            <h3 class="text-2xl font-semibold">Hackathon Odoo</h3>
+            <p class="mb-2">Projet: Office Olympia</p>
+            <p>Récompense: Prix du projet le plus rentable financièrement.</p>
+            <p>
+              Description: Application Fullstack avec Python, Django et mySQL.
+            </p>
+          </div>
+        </div>
       </section>
     </div>
 
     <script type="module" src="src/main.ts"></script>
   </body>
 </html>
+
+ 
