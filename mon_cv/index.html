@@ -11,13 +11,39 @@
   </head>
   <body class="bg-gray-900 text-white">
 
-    <header class="text-center py-12 bg-black bg-opacity-60">
-      <h1 class="text-5xl font-bold text-synth-pink animated-underline">Lionel ZOVI</h1>
-      <p class="text-xl text-synth-blue mt-4 fadeInUp">Développeur Fullstack / Software</p>
+    <header class="text-center py-12 bg-black bg-opacity-60 relative">
+      <nav class="container mx-auto flex justify-between items-center p-5">
+          <h1 class="text-5xl font-bold text-black px-8 rounded-xl animated-underline">Lionel ZOVI</h1>
+          <div class="hidden lg:flex space-x-4">
+              <a href="#about" class="text-xl nav-link">À propos</a>
+              <a href="#projects" class="text-xl nav-link">Projets</a>
+              <a href="#formations" class="text-xl nav-link">Formations</a>
+              <a href="#skills" class="text-xl nav-link">Compétences</a>
+              <a href="#contact" class="text-xl nav-link">Contact</a>
+              <a href="#dev-activities" class="text-xl nav-link">Réalisations</a>
+          </div>
+          <button class="lg:hidden text-synth-pink focus:outline-none focus:ring" id="mobile-menu-button">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+          </button>
+      </nav>
+      <div class="hidden" id="mobile-menu">
+          <a href="#about" class="text-xl block py-2 text-synth-pink hover:bg-gray-700">À propos</a>
+          <a href="#projects" class="text-xl block py-2 text-synth-pink hover:bg-gray-700">Projets</a>
+          <a href="#formations" class="text-xl block py-2 text-synth-pink hover:bg-gray-700">Formations</a>
+          <a href="#skills" class="text-xl block py-2 text-synth-pink hover:bg-gray-700">Compétences</a>
+          <a href="#contact" class="text-xl block py-2 text-synth-pink hover:bg-gray-700">Contact</a>
+          <a href="#dev-activities" class="text-xl block py-2 text-synth-pink hover:bg-gray-700">Réalisations</a>
+      </div>
   </header>
   
+  <div class="text-center py-8">
+    <p class="text-5xl text-white mt-4 fadeInUp animated-title">Développeur Fullstack / Software</p>
+</div>
 
-  <section class="my-12">
+
+  <section id="about" class="my-12">
     <h2 class="text-4xl font-bold pl-5 text-synth-blue border-b-2 border-synth-purple pb-2 slide-in-left">À propos de moi</h2>
     <p class="mt-4 px-8 text-xl text-nature-green puzzle-text">
       Développeur Fullstack / Software avec trois ans d'expérience,
@@ -33,7 +59,7 @@
         </p>
       </section>
 
-      <section class="my-12">
+      <section id="projects" class="my-12">
         <h2 class="text-4xl font-bold pl-5 text-synth-blue border-b-2 border-purple-500 pb-2">Projets</h2>
         <div class="grid px-8 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
@@ -277,7 +303,7 @@
       </div>
       </section>
 
-      <section class="my-12">
+      <section id="formations" class="my-12">
         <h2 class="text-4xl font-bold pl-5 text-synth-blue border-b-2 border-synth-purple pb-2">Formations</h2>
         <div class="mt-8 mx-8 space-y-6">
             <!-- Formation Items -->
@@ -322,7 +348,7 @@
         </div>
       </section>
 
-      <section class="my-12">
+      <section id="skills" class="my-12">
         <h2 class="text-4xl font-bold pl-5 text-synth-blue border-b-2 border-synth-purple pb-2">Compétences</h2>
        
         <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-8">
@@ -379,7 +405,7 @@
     </section>
     
 
-    <section class="my-12">
+    <section id="contact" class="my-12">
       <h2 class="text-4xl font-bold pl-5 text-synth-blue border-b-2 border-synth-purple pb-2">Contact</h2>
       
       <div class="mt-8 mx-8 px-8 py-4 bg-black bg-opacity-70 rounded-lg shadow-lg shadow-synth-purple/50 border border-gray-700">
@@ -407,7 +433,7 @@
   </section>
   
 
-  <section class="my-12 relative">
+  <section id="dev-activities" class="my-12 relative">
     <h2 class="text-4xl font-bold pl-5 text-synth-blue border-b-2 border-synth-purple pb-2">Réalisations en Développement</h2>
    
     <div class="mt-8 px-8">

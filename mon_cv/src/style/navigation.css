@@ -1,0 +1,72 @@
+/* Styles par défaut pour la navigation (mobile-first) */
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #00d9e9;
+  transition: color 0.3s ease;
+  padding-bottom: 5px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ff007a;
+  text-shadow:
+    0 0 10px #ff007a,
+    0 0 20px #ff007a;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ff007a;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-out;
+  transform-origin: bottom right;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Bouton de menu mobile */
+#mobile-menu-button {
+  display: block; /* Visible en mode mobile */
+}
+
+#mobile-menu {
+  /* display: none; */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour les écrans plus grands que 1350px (mode desktop) */
+@media (min-width: 1023px) {
+  #mobile-menu-button {
+    display: none; /* Le bouton est caché en mode desktop */
+  }
+
+  .lg\\:flex {
+    display: flex; /* Les éléments de navigation du desktop sont affichés */
+  }
+
+  #mobile-menu {
+    display: none; /* Le menu mobile reste caché */
+  }
+}
+
+/* Styles pour le mode mobile (sous 1350px) */
+@media (max-width: 1022px) {
+  .lg\\:hidden {
+    display: none; /* Cache les éléments de navigation du desktop */
+  }
+}

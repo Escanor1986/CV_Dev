@@ -1,0 +1,49 @@
+.fade-in-right {
+  animation: slideInRight 0.8s forwards;
+}
+
+.floating-bubble {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animated-underline {
+  position: relative;
+  animation:
+    underlineGlow 2s forwards,
+    float 6s ease-in-out infinite;
+  background-image: linear-gradient(120deg, #ff007a 0%, #00d9e9 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  background-position: 0 100%;
+}
+
+.fadeInUp {
+  animation: fadeInUp 2s ease-out;
+}
+
+.slide-in-left {
+  animation: slideInLeft 2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Titre profession */
+.fadeInUp {
+  animation: fadeInUp 2s ease-out;
+}
+
+.animated-title {
+  background: linear-gradient(120deg, #00d9e9, #ff007a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 5s linear infinite;
+  display: inline-block;
+}
+
+/* Gestion des bulles lors du click à l'écran */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0);
+  animation: bubble-animation 2s forwards;
+}

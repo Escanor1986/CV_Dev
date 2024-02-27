@@ -1,4 +1,8 @@
 import './style.css';
+import './style/base.css';
+import './style/animations.css';
+import './style/components.css';
+import './style/navigation.css';
 import { gsap } from 'gsap';
 
 // Fonction pour animer les lettres
@@ -30,4 +34,47 @@ function animateText(textSelector: string): void {
 // Appeler la fonction d'animation lorsque le DOM est chargé
 document.addEventListener('DOMContentLoaded', () => {
   animateText('.puzzle-text');
+});
+
+// Gestion du menu mobile
+document.addEventListener('DOMContentLoaded', () => {
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener('click', () => {
+      // Toggle the 'hidden' class
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  } else {
+    console.error('Menu button or mobile menu element is missing.');
+  }
+});
+
+/* Gestion des bulles lors du click à l'écran */
+document.addEventListener('click', function (e) {
+  // Crée une nouvelle bulle
+  var bubble = document.createElement('div');
+  bubble.classList.add('bubble');
+  document.body.appendChild(bubble);
+
+  // La taille et la position de la bulle
+  var size = Math.random() * 50 + 20; // Taille entre 20px et 70px
+  bubble.style.width = bubble.style.height = size + 'px';
+  bubble.style.left = e.clientX + window.scrollX - size / 2 + 'px';
+  bubble.style.top = e.clientY + window.scrollY - size / 2 + 'px';
+
+  // Définit une couleur aléatoire pour la bulle
+  const colors = ['#ff007a', '#00d9e9', '#bd00ff', '#4ade80'];
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  bubble.style.backgroundColor = randomColor;
+
+  // Supprime la bulle
+  setTimeout(function () {
+    document.body.removeChild(bubble);
+  }, 2000); // Correspond à la durée de l'animation
 });
