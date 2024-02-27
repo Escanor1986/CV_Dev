@@ -4,6 +4,7 @@ import './style/animations.css';
 import './style/components.css';
 import './style/navigation.css';
 import './style/formation.css';
+import './style/footer.css';
 import { gsap } from 'gsap';
 
 // Fonction pour animer les lettres
@@ -78,4 +79,108 @@ document.addEventListener('click', function (e) {
   setTimeout(function () {
     document.body.removeChild(bubble);
   }, 2000); // Correspond à la durée de l'animation
+});
+
+// Gestion de canvas pour le footer
+document.addEventListener('DOMContentLoaded', () => {
+  const canvas = document.getElementById('particleCanvas') as HTMLCanvasElement;
+  const ctx = canvas.getContext('2d')!;
+
+  canvas.width = window.innerWidth;
+  canvas.height = 200; // Hauteur fixe pour le footer
+
+  interface ParticleProps {
+    x: number;
+    y: number;
+    size: number;
+    speedX: number;
+    speedY: number;
+    color: string;
+  }
+
+  class Particle implements ParticleProps {
+    x: number;
+    y: number;
+    size: number;
+    speedX: number;
+    speedY: number;
+    color: string;
+
+    constructor() {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.size = Math.random() * 5 + 1;
+      this.speedX = Math.random() * 3 - 1.5;
+      this.speedY = Math.random() * 3 - 1.5;
+      this.color = ['#ff007a', '#00d9e9', '#bd00ff', '#4ade80'][
+        Math.floor(Math.random() * 4)
+      ];
+    }
+
+    update(): void {
+      this.x += this.speedX;
+      this.y += this.speedY;
+
+      // Régénération des particules lorsqu'elles sortent du canvas
+      if (
+        this.x < 0 ||
+        this.x > canvas.width ||
+        this.y < 0 ||
+        this.y > canvas.height
+      ) {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 5 + 1;
+        this.speedX = Math.random() * 3 - 1.5;
+        this.speedY = Math.random() * 3 - 1.5;
+      }
+    }
+
+    draw(): void {
+      ctx.fillStyle = this.color;
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  let particlesArray: Particle[] = [];
+
+  function init(): void {
+    particlesArray = [];
+    let initialCount = 100;
+    for (let i = 0; i < initialCount; i++) {
+      particlesArray.push(new Particle());
+    }
+  }
+
+  function animate(): void {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particlesArray.forEach((particle, index) => {
+      particle.update();
+      particle.draw();
+    });
+
+    // Maintenir le nombre de particules entre 20 et 100
+    if (particlesArray.length < 20) {
+      let additionalParticles =
+        Math.random() * (80 - particlesArray.length) +
+        20 -
+        particlesArray.length;
+      for (let i = 0; i < additionalParticles; i++) {
+        particlesArray.push(new Particle());
+      }
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  init();
+  animate();
+
+  window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = 200;
+    init();
+  });
 });
