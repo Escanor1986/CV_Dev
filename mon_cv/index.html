@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/fdbd35fc2c.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
 
-    <title>Lionel ZOVI - CV</title>
+    <title>Lionel Zovi - Portfolio</title>
   </head>
   <body class="bg-gray-900 text-white">
 
-    <header class="text-center py-12 bg-black bg-opacity-60 relative">
+    <header id="top" class="text-center py-12 bg-black bg-opacity-60 relative">
       <nav class="container mx-auto flex justify-between items-center p-5">
           <h1 class="text-5xl font-bold text-black px-8 rounded-xl animated-underline">Lionel ZOVI</h1>
           <div class="hidden lg:flex space-x-4">
@@ -305,48 +305,82 @@
 
       <section id="formations" class="my-12">
         <h2 class="text-4xl font-bold pl-5 text-synth-blue border-b-2 border-synth-purple pb-2">Formations</h2>
-        <div class="mt-8 mx-8 space-y-6">
-            <!-- Formation Items -->
-            <div class="fade-in-right">
-                <h3 class="text-2xl font-semibold text-synth-pink">Diplôme d'Humanité Supérieur en Sciences-Informatique</h3>
-                <p class="text-cyber-green">Collège Saint-Martin</p>
+        <div class="mt-8 mx-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 perspective">
+          <div class="capsule">
+            <div class="formation-card">
+              <h3 class="text-2xl text-center font-semibold text-synth-pink">Diplôme d'Humanité Supérieur en Sciences-Informatique</h3>
+        <p class="text-lg font-semibold text-white text-center py-1">HTML, C++, Computer Science</p>
+
+              <p class="text-xl text-nature-green text-center py-1">Collège Saint-Martin</p>
+              <p class="text-synth-blue text-lg  text-center py-1">Bac</p>
             </div>
-            
-            <div class="fade-in-right" style="animation-delay: 0.2s;">
-                <h3 class="text-2xl font-semibold text-synth-pink">Diplôme d'Inspecteur de Police</h3>
-                <p class="text-cyber-green">Académie de police Belge</p>
-            </div>
-    
-            <div class="fade-in-right" style="animation-delay: 0.4s;">
-                <h3 class="text-2xl font-semibold text-synth-pink">Certificat en Criminologie (Bac+3)</h3>
-                <p class="text-cyber-green">Université de Liège</p>
-            </div>
-            <div class="fade-in-right" style="animation-delay: 0.6s;">
-              <h3 class="text-2xl font-semibold text-synth-pink">Certificat de Développeur Web (JavaScript, React, Node.js, MongoDB) (Bac+2)</h3>
-              <p class="text-cyber-green">OpenClassrooms</p>
           </div>
-      
-          <div class="fade-in-right" style="animation-delay: 0.8s;">
-              <h3 class="text-2xl font-semibold text-synth-pink">Brevet JavaScript</h3>
-              <p class="text-cyber-green">Dyma</p>
-          </div>
-      
-          <div class="fade-in-right" style="animation-delay: 1s;">
-              <h3 class="text-2xl font-semibold text-synth-pink">Brevet JavaScript</h3>
-              <p class="text-cyber-green">W3Schools</p>
-          </div>
-      
-          <div class="fade-in-right" style="animation-delay: 1.2s;">
-              <h3 class="text-2xl font-semibold text-synth-pink">Formation en cours de Fullstack Developer</h3>
-              <p class="text-cyber-green">NXAcademy</p>
-          </div>
-      
-          <div class="fade-in-right" style="animation-delay: 1.4s;">
-              <h3 class="text-2xl font-semibold text-synth-pink">Formation en cours de Software Développeur (Python, SQL, Algorithme, Mathématique)</h3>
-              <p class="text-cyber-green">Code Academy</p>
-          </div>
+    <div class="capsule">
+      <div class="formation-card">
+        <h3 class="text-2xl font-semibold text-synth-pink text-center py-1">Diplôme d'Inspecteur de Police</h3>
+        <p class="text-xl text-nature-green text-center py-1">Académie de police Belge</p>
+        <p class="text-synth-blue text-lg  text-center py-1">Bac+1</p>
+      </div>
+    </div>
+    <div class="capsule">
+      <div class="formation-card">
+        <h3 class="text-2xl font-semibold text-synth-pink text-center py-1">Certificat en Criminologie</h3>
+        <p class="text-xl text-nature-green text-center py-1">Université de Liège</p>
+        <p class="text-synth-blue text-lg  text-center py-1">Bac+3</p>
+      </div>
+    </div>
+    <div class="capsule">
+      <div class="formation-card">
+        <a href="https://openclassrooms.com/fr/paths/556-developpeur-web" class="formation-card-link" target="_blank" rel="noopener noreferrer">
+        <h3 class="text-2xl font-semibold text-synth-pink text-center py-1">Certificat Web Developer</h3>
+        <p class="text-lg font-semibold text-white text-center py-1">HTML, CSS, SASS, JavaScript, React, Node.js, MongoDB, Express, Figma</p>
+
+        <p class="text-xl text-nature-green text-center py-1">OpenClassrooms</p>
+        <p class="text-synth-blue text-lg  text-center py-1">Bac+2</p>
+        </a>
+      </div>
+    </div>
+    <div class="capsule">
+      <a href="https://dyma.fr/certification/63b96d46870849954f84f603/5de1a78332cf6b3128beee34" class="formation-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="formation-card">
+        <h3 class="text-2xl font-semibold text-synth-pink text-center py-1">Brevet JavaScript</h3>
+        <p class="text-xl text-nature-green text-center py-1">Dyma</p>
+        <p class="text-synth-blue text-lg  text-center py-1">Brevet</p>
+      </div>
+      </a>
+    </div>
+    <div class="capsule">
+      <a href="https://verify.w3schools.com/1NX7H48DAP" class="formation-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="formation-card">
+        <h3 class="text-2xl font-semibold text-synth-pink text-center py-1">Brevet JavaScript</h3>
+        <p class="text-xl text-nature-green text-center py-1">W3Schools</p>
+        <p class="text-synth-blue text-lg  text-center py-1">Brevet</p>
+      </div>
+      </a>
+    </div>
+    <div class="capsule">
+      <a href="https://beta.nx.academy/courses/" class="formation-card-link" target="_blank" rel="noopener noreferrer">
+        <div class="formation-card">
+          <h3 class="text-2xl font-semibold text-synth-pink text-center py-1">Fullstack Developer (en cours)</h3>
+          <p class="text-lg font-semibold text-white text-center py-1">Javascript, NodeJs, TypeScript, Docker, POO, CI/CD GitHub Actions(Pipelines), API REST, GraphQL, Lead Dev</p>
+          <p class="text-xl text-nature-green text-center py-1">NX Academy</p>
+          <p class="text-synth-blue text-lg  text-center py-1">Brevet</p>
         </div>
-      </section>
+      </a>
+    </div>
+    <div class="capsule">
+      <a href="https://www.codecademy.com/" class="formation-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="formation-card">
+        <h3 class="text-2xl font-semibold text-synth-pink text-center py-1">Computer Science (en cours)</h3>
+        <p class="text-lg font-semibold text-white text-center py-1">Python, Django, SQL, Algorithme, Mathématique</p>
+        <p class="text-xl text-nature-green text-center py-1">Code Academy</p>
+        <p class="text-synth-blue text-lg  text-center py-1">Brevet</p>
+      </div>
+      </a>
+    </div>
+        </div>
+    </section>
+    
 
       <section id="skills" class="my-12">
         <h2 class="text-4xl font-bold pl-5 text-synth-blue border-b-2 border-synth-purple pb-2">Compétences</h2>
@@ -398,7 +432,7 @@
                     Formation & Certification
                 </h3>
                 <p class="text-cyber-green">
-                    Formations complétées en développement web et logiciel, certifications en JavaScript, cours en développement Full Stack.
+                    Formations complétées en développement web et logiciel, certifications en JavaScript, cours en développement Full Stack et en Computer Science.
                 </p>
             </div>
         </div>
@@ -409,24 +443,24 @@
       <h2 class="text-4xl font-bold pl-5 text-synth-blue border-b-2 border-synth-purple pb-2">Contact</h2>
       
       <div class="mt-8 mx-8 px-8 py-4 bg-black bg-opacity-70 rounded-lg shadow-lg shadow-synth-purple/50 border border-gray-700">
-          <p class="text-synth-pink mb-4">
+          <p class="text-synth-pink text-2xl mb-4">
               Pour toute question, proposition de projet ou demande de collaboration, n'hésitez pas à me contacter :
           </p>
           <ul class="list-none space-y-2">
-              <li class="text-cyber-green hover:text-synth-pink transition duration-300 ease-in-out">
-                  Email: <a target="_blank"  href="mailto:lionel.zovi@gmail.com" class="hover:underline text-synth-blue hover:text-blue-700">Click to reach me !</a>
+              <li class="text-cyber-green hover:text-synth-pink transition duration-300 ease-in-out text-xl">
+                  Email: <a target="_blank"  href="mailto:lionel.zovi@gmail.com" class="hover:underline text-synth-blue hover:text-blue-700 text-2xl pl-4"><i class="fa-regular fa-paper-plane"></i></a>
               </li>
-              <li class="text-cyber-green hover:text-synth-pink transition duration-300 ease-in-out">
-                  LinkedIn: <a target="_blank"  href="https://www.linkedin.com/in/lionelzovi/" class="hover:underline text-synth-blue hover:text-blue-700">Lien LinkedIn</a>
+              <li class="text-cyber-green hover:text-synth-pink transition duration-300 ease-in-out text-xl">
+                  LinkedIn: <a target="_blank"  href="https://www.linkedin.com/in/lionelzovi/" class="hover:underline text-synth-blue hover:text-blue-700 text-2xl pl-4"><i class="fa-brands fa-linkedin"></i></a>
               </li>
-              <li class="text-cyber-green hover:text-synth-pink transition duration-300 ease-in-out">
-                  GitHub: <a target="_blank"  href="https://github.com/Escanor1986" class="hover:underline text-synth-blue hover:text-blue-700">Lien GitHub</a>
+              <li class="text-cyber-green hover:text-synth-pink transition duration-300 ease-in-out text-xl">
+                  GitHub: <a target="_blank"  href="https://github.com/Escanor1986" class="hover:underline text-synth-blue hover:text-blue-700 text-2xl pl-4"><i class="fa-brands fa-github"></i></a>
               </li>
-              <li class="text-cyber-green hover:text-synth-pink transition duration-300 ease-in-out">
-                  Codewars: <a target="_blank"  href="https://www.codewars.com/users/Neo_Monkey_D_Luffy" class="hover:underline text-synth-blue hover:text-blue-700">Lien Codewars</a>
+              <li class="text-cyber-green hover:text-synth-pink transition duration-300 ease-in-out text-xl">
+                  Codewars: <a target="_blank"  href="https://www.codewars.com/users/Neo_Monkey_D_Luffy" class="hover:underline text-synth-blue hover:text-blue-700 text-2xl pl-4"><i class="fa-solid fa-code"></i></a>
               </li>
-              <li class="text-cyber-green hover:text-synth-pink transition duration-300 ease-in-out">
-                  Coderbyte: <a target="_blank"  href="https://coderbyte.com/profile/Escanor1986" class="hover:underline text-synth-blue hover:text-blue-700">Lien Coderbyte</a>
+              <li class="text-cyber-green hover:text-synth-pink transition duration-300 ease-in-out text-xl">
+                  Coderbyte: <a target="_blank"  href="https://coderbyte.com/profile/Escanor1986" class="hover:underline text-synth-blue hover:text-blue-700 text-2xl pl-4"><i class="fa-solid fa-code"></i></a>
               </li>
           </ul>
       </div>
@@ -438,7 +472,6 @@
    
     <div class="mt-8 px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Each bubble -->
             <div class="mb-6 floating-bubble bg-black bg-opacity-70 rounded-full p-6 shadow-lg shadow-synth-purple/50 border border-gray-700 hover:bg-gray-800 transition duration-500">
                 <h3 class="text-2xl font-semibold text-synth-pink">Hackathon Odoo</h3>
                 <p class="text-cyber-green mb-2">Projet: Office Olympia</p>
@@ -450,8 +483,9 @@
         </div>
     </div>
 </section>
+<a href="#top" class="back-to-top">↑ Top</a>
 
-    </div>
+
 
     <script type="module" src="/src/main.ts"></script>
   </body>

@@ -1,0 +1,35 @@
+.perspective {
+  perspective: 1500px;
+}
+
+.capsule {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.capsule:hover {
+  transform: rotateY(20deg);
+}
+
+.formation-card {
+  background: rgba(255, 255, 255, 0.1); /* Change as needed */
+  border-radius: 20px; /* Capsule shape */
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+  backface-visibility: hidden; /* Hide the back side of the card when rotating */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust based on content */
+}
+
+.formation-card:hover {
+  background: rgba(255, 255, 255, 0.2); /* Slightly more visible on hover */
+}
+
+.formation-card-link {
+  text-decoration: none;
+}

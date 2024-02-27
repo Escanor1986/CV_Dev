@@ -3,6 +3,7 @@ import './style/base.css';
 import './style/animations.css';
 import './style/components.css';
 import './style/navigation.css';
+import './style/formation.css';
 import { gsap } from 'gsap';
 
 // Fonction pour animer les lettres
