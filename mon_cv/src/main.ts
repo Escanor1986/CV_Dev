@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function animate(): void {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    particlesArray.forEach((particle, index) => {
+    particlesArray.forEach((particle) => {
       particle.update();
       particle.draw();
     });
